@@ -19,6 +19,7 @@
         var channel = pusher.subscribe('chat-room');
         channel.bind('my-event', function(data) {
             console.log(data.message);
+            refreshChat();
         });
     </script>
 
